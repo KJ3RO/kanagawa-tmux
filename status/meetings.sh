@@ -5,10 +5,10 @@ show_meetings() {
   local result
   local text
   local module
-  icon="$(get_tmux_option "@catppuccin_meetings_icon" "")"
-  color="$(get_tmux_option "@catppuccin_meetings_color" "$thm_blue")"
+  icon="$(get_tmux_option "@kanawaga_meetings_icon" "")"
+  color="$(get_tmux_option "@kanawaga_meetings_color" "$thm_blue")"
   result="$(main)"
-  text="$(get_tmux_option "@catppuccin_meetings_text" "$result")"
+  text="$(get_tmux_option "@kanawaga_meetings_text" "$result")"
   module=$( build_status_module "$index" "$icon" "$color" "$text" )
   echo "$module"
 }
